@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		F550C7581F4D74AC00B57C90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F550C7571F4D74AC00B57C90 /* main.m */; };
 		F550C75B1F4D74AC00B57C90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F550C75A1F4D74AC00B57C90 /* AppDelegate.m */; };
-		F550C75E1F4D74AC00B57C90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550C75D1F4D74AC00B57C90 /* ViewController.m */; };
+		F550C75E1F4D74AC00B57C90 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F550C75D1F4D74AC00B57C90 /* ViewController.mm */; };
 		F550C7611F4D74AC00B57C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F550C75F1F4D74AC00B57C90 /* Main.storyboard */; };
 		F550C7631F4D74AC00B57C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F550C7621F4D74AC00B57C90 /* Assets.xcassets */; };
 		F550C7661F4D74AC00B57C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F550C7641F4D74AC00B57C90 /* LaunchScreen.storyboard */; };
+		F550C76F1F4D74C800B57C90 /* ObjectOC.m in Sources */ = {isa = PBXBuildFile; fileRef = F550C76E1F4D74C800B57C90 /* ObjectOC.m */; };
+		F570AEC01FC57F7B0003F76E /* ObjectCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F570AEBE1FC57F7B0003F76E /* ObjectCpp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,16 @@
 		F550C7591F4D74AC00B57C90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F550C75A1F4D74AC00B57C90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F550C75C1F4D74AC00B57C90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F550C75D1F4D74AC00B57C90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F550C75D1F4D74AC00B57C90 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		F550C7601F4D74AC00B57C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F550C7621F4D74AC00B57C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F550C7651F4D74AC00B57C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F550C7671F4D74AC00B57C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F550C76D1F4D74C800B57C90 /* ObjectOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectOC.h; sourceTree = "<group>"; };
+		F550C76E1F4D74C800B57C90 /* ObjectOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectOC.m; sourceTree = "<group>"; };
+		F550C7701F4D74EB00B57C90 /* ObjectInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectInterface.h; sourceTree = "<group>"; };
+		F570AEBE1FC57F7B0003F76E /* ObjectCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCpp.cpp; sourceTree = "<group>"; };
+		F570AEBF1FC57F7B0003F76E /* ObjectCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCpp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +65,19 @@
 		F550C7551F4D74AC00B57C90 /* Trick */ = {
 			isa = PBXGroup;
 			children = (
+				F570AEBD1FC57F7B0003F76E /* Cpp */,
 				F550C7591F4D74AC00B57C90 /* AppDelegate.h */,
 				F550C75A1F4D74AC00B57C90 /* AppDelegate.m */,
 				F550C75C1F4D74AC00B57C90 /* ViewController.h */,
-				F550C75D1F4D74AC00B57C90 /* ViewController.m */,
+				F550C75D1F4D74AC00B57C90 /* ViewController.mm */,
 				F550C75F1F4D74AC00B57C90 /* Main.storyboard */,
 				F550C7621F4D74AC00B57C90 /* Assets.xcassets */,
 				F550C7641F4D74AC00B57C90 /* LaunchScreen.storyboard */,
 				F550C7671F4D74AC00B57C90 /* Info.plist */,
 				F550C7561F4D74AC00B57C90 /* Supporting Files */,
+				F550C76D1F4D74C800B57C90 /* ObjectOC.h */,
+				F550C76E1F4D74C800B57C90 /* ObjectOC.m */,
+				F550C7701F4D74EB00B57C90 /* ObjectInterface.h */,
 			);
 			path = Trick;
 			sourceTree = "<group>";
@@ -77,6 +88,15 @@
 				F550C7571F4D74AC00B57C90 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F570AEBD1FC57F7B0003F76E /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				F570AEBE1FC57F7B0003F76E /* ObjectCpp.cpp */,
+				F570AEBF1FC57F7B0003F76E /* ObjectCpp.h */,
+			);
+			path = Cpp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +130,7 @@
 				TargetAttributes = {
 					F550C7521F4D74AC00B57C90 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3H96442V9Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F550C75E1F4D74AC00B57C90 /* ViewController.m in Sources */,
+				F550C75E1F4D74AC00B57C90 /* ViewController.mm in Sources */,
+				F570AEC01FC57F7B0003F76E /* ObjectCpp.cpp in Sources */,
 				F550C75B1F4D74AC00B57C90 /* AppDelegate.m in Sources */,
 				F550C7581F4D74AC00B57C90 /* main.m in Sources */,
+				F550C76F1F4D74C800B57C90 /* ObjectOC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3H96442V9Q;
 				INFOPLIST_FILE = Trick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ci123.Trick;
@@ -285,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3H96442V9Q;
 				INFOPLIST_FILE = Trick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ci123.Trick;
@@ -311,6 +336,7 @@
 				F550C76C1F4D74AC00B57C90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

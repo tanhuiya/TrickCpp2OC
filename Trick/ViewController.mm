@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "ObjectOC.h"
+#include "ObjectCpp.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    ObjectOC * oc = [[ObjectOC alloc]init];
+    void* point = (__bridge void*)oc;
+    ObjectCpp* cpp = new ObjectCpp(point,oc.call);
+    cpp->function((__bridge void*)@"123412");
+    delete cpp;
 }
 
 
